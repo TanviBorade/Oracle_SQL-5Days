@@ -1,10 +1,10 @@
 create table gym_members(
-	      id number(10) primary key,
+	id number(10) primary key,
         name varchar2(20)not null,
         age number(3) not null check(age>0),
         joining_date date not null,
         expiration_date date not null,
-	      city varchar2(20) not null,
+	city varchar2(20) not null,
         cost number(10) not null check(cost>0),
         height number(10) not null check(height>0),
         weight number(10) not null check(weight>0),
